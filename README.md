@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Stewart Little Three
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+A little web robotics visualization project built with ReactJS, ThreeJS and react-three-fiber to solve for the inverse kinematics of a Stewart-Gough Platform (Stewart, not Stuart). This app employs a geometric method for solving inverse kinematics (, as opposed to a numerical one - Python )
 
-In the project directory, you can run:
+Inverse kinematics is a robotics method to solve for
 
-### `npm start`
+Given a desired [end effector](https://en.wikipedia.org/wiki/Robot_end_effector) position, what inputs are needed in order to achieve said result? In this case, the end effector is our platform and the inputs are our leg lengths.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+There are various combinations of hexagons and triangles that make up the geometry of a Stewart platform, both of 3 and 6 degrees of freedom.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Stewart Platform Configurations](https://www.researchgate.net/publication/260637657/figure/fig1/AS:622401805090816@1525403562379/Top-view-of-different-configurations-for-Stewart-platforms-a-configuration-with.png)
 
-### `npm test`
+Source: [Martinez, Peña, Soto - International Journal of Advanced Robotic Systems](https://www.researchgate.net/publication/260637657_Towards_a_Robust_Solution_of_the_Non-Linear_Kinematics_for_the_General_Stewart_Platform_with_Estimation_of_Distribution_Algorithms)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I employed regular hexagons for both the platform and base in order to take advantage of symmetries while demonstrating 6 DOF.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+stewart-little-three is hosted on Github Pages using ghpages react

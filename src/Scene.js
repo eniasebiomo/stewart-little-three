@@ -2,18 +2,26 @@ import './Scene.css';
 import styled from "styled-components";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Platform from './components/Platform'
-import Base from './components/Base';
-import { useControls } from 'leva';
+import StewartPlatform from './components/Platform'
+// import { useControls } from 'leva';
 
 
 export const Scene = () => {
 
-  const { pitch, yaw, roll } = useControls({
-    pitch: { value: 0, min: -Math.PI, max: Math.PI, step: .1 },
-    yaw: { value: 0, min: -Math.PI, max: Math.PI, step: .1 },
-    roll: { value: 0, min: -Math.PI, max: Math.PI, step: .1 }
-  })
+  // const { pitch, yaw, roll } = useControls({
+  //   pitch: { value: 0, min: -Math.PI, max: Math.PI, step: .1 },
+  //   yaw: { value: 0, min: -Math.PI, max: Math.PI, step: .1 },
+  //   roll: { value: 0, min: -Math.PI, max: Math.PI, step: .1 }
+  // });
+
+  // # todo reset button
+  // contraints on / off boolean
+
+  const height = 10;
+  const baseRadius = 8;
+  const platformRadius = 5;
+  // var baseHexVerts = getHexagonVertices(baseRadius)
+  // var platformHexVerts = getHexagonVertices(platformRadius)
 
   return (
     <Container>
@@ -21,8 +29,16 @@ export const Scene = () => {
         <OrbitControls />
         <ambientLight intensity={0.3} color="#FFFFFF" />
         <pointLight intensity={1.0} position={[10, 20, 10]} />
-        <Platform position={[0, 10, 0]} rotation={[pitch, yaw, roll]} />
-        <Base position={[0,0,0]}/>
+        <StewartPlatform 
+          height={height}
+          baseRadius={baseRadius}
+          // baseHexVerts={baseHexVerts}
+          basePosition={[0,0,0]}
+          platformRadius={platformRadius} 
+          // platformHexVerts={platformHexVerts}
+          // platformPosition={[0, 10, 0]}
+          // platformRotation={[0, 0, 0]} 
+        />
       </Canvas>
     </Container>
   );
