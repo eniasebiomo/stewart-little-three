@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/stewart-little-three/static/css/main.dedbb01c.css",
-    "main.js": "/stewart-little-three/static/js/main.9fdb7f70.js",
+    "main.js": "/stewart-little-three/static/js/main.802f6bc6.js",
     "static/js/787.3fa5ab04.chunk.js": "/stewart-little-three/static/js/787.3fa5ab04.chunk.js",
     "index.html": "/stewart-little-three/index.html",
     "main.dedbb01c.css.map": "/stewart-little-three/static/css/main.dedbb01c.css.map",
-    "main.9fdb7f70.js.map": "/stewart-little-three/static/js/main.9fdb7f70.js.map",
+    "main.802f6bc6.js.map": "/stewart-little-three/static/js/main.802f6bc6.js.map",
     "787.3fa5ab04.chunk.js.map": "/stewart-little-three/static/js/787.3fa5ab04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dedbb01c.css",
-    "static/js/main.9fdb7f70.js"
+    "static/js/main.802f6bc6.js"
   ]
 }
