@@ -85,8 +85,8 @@ const StewartPlatform = props => {
 
         if (renderFlag) {
             setLegLengths(lengths)
-            platformRef.current.rotation.y = pitch
-            platformRef.current.rotation.x = yaw
+            platformRef.current.rotation.x = pitch
+            platformRef.current.rotation.y = yaw
             platformRef.current.rotation.z = roll
             platformRef.current.position.x = sway
             platformRef.current.position.y = heave
