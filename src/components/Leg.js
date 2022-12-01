@@ -7,7 +7,7 @@ const Legs = forwardRef((props, ref) => {
     const style = {
         color: "magenta",
         fontFamily: "Trebuchet MS",
-        fontSize: "50px",
+        fontSize: "20px",
         userSelect: "none" }
     const legLabel = index => (
         <p>L<sub>{index}</sub>:&nbsp;{props.getLength(index)}</p>

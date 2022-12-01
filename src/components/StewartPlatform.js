@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef, useMemo, useCallback, useState } from "react";
+import React, { useRef, useMemo, useCallback, useState } from "react";
 import { useFrame } from "@react-three/fiber"
 import { button, useControls } from 'leva';
 import { Object3D } from "three";
@@ -7,7 +7,7 @@ import HexagonGeometry, { getHexagonVertices } from "./HexagonGeometry";
 import Legs from "./Leg";
 
 
-const StewartPlatform = forwardRef((props, ref) => {
+const StewartPlatform = props => {
     let n_frame = 0;
     const baseRef = useRef(null);
     const platformRef = useRef(null);
@@ -109,6 +109,6 @@ const StewartPlatform = forwardRef((props, ref) => {
             <Legs {...props} getLength={getLength} ref={legsRef} baseVertices={baseVertices}/>
         </>
     )   
-});
+};
 
 export default StewartPlatform;
